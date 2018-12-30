@@ -42,35 +42,4 @@ public class SentenceController {
         return sentence;
     }
 
-//    public String getWord(String service) {
-//        List<ServiceInstance> list = discoveryClient.getInstances(service);
-//        if (list != null && list.size() > 0) {
-//            URI uri = list.get(0).getUri();
-//            if (uri != null) {
-//                return (new RestTemplate()).getForObject(uri, String.class);
-//            }
-//        }
-//        return null;
-//    }
-//
-//    public String getWordWithRibbon(String service) {
-//        ServiceInstance serviceInstance = loadBalancerClient.choose(service);
-//
-//        /**
-//         * Making calls using serviceIntance is not a good approach...
-//         * We need some declarative approach.
-//         * For that we need Feign. For now this is learning Ribbon.
-//         */
-//        URI uri = serviceInstance.getUri();
-//        if (uri != null) {
-//            return (new RestTemplate()).getForObject(uri, String.class);
-//        }
-//        return null;
-//    }
-//
-//
-//    public String getWordWithRibbonRestTemplate(String service) {
-//        LOGGER.info("Inside getWordWithRibbonRestTemplate Service name : {}", service);
-//        return restTemplate.getForObject("http://" + service, String.class);
-//    }
 }
